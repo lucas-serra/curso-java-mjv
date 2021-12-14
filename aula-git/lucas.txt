@@ -2,3 +2,4 @@ nome: Lucas Dias
 email: lucasdserra1234@gmail.com
 
 sobre mim: apaixonado por tecnologias, animais e natureza.
+github: lucas-serra
