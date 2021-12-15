@@ -1,5 +1,5 @@
 nome: Lucas Dias
 email: lucasdserra1234@gmail.com
-
+meu linkedin:https://www.linkedin.com/in/lucas-dias-serra-69b211223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BShA0ANhPT4GsjD0GhV3lpA%3D%3D
 sobre mim: apaixonado por tecnologias, animais e natureza.
 github: lucas-serra
