@@ -1,0 +1,15 @@
+package aula4;
+
+
+public class InformacoesPessoais {
+	public static void main(String[] args) {
+		Pessoa lucas= new Pessoa();
+		
+		lucas.setNome("Lucas Dias Serra");
+		lucas.setCpf("146.184.067-90");
+		lucas.setAltura(1.75);
+		
+		
+	}
+	
+}

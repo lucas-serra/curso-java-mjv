@@ -1,0 +1,9 @@
+package aula;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Disciplinas {
+	List<String> disciplinas= new ArrayList<String>();
+	
+}

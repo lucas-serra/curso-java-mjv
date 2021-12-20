@@ -1,0 +1,10 @@
+package aula;
+
+public class AtividadeAula17_12 {
+
+	public static void main(String[] args) {
+		int idade;
+		
+	}
+
+}

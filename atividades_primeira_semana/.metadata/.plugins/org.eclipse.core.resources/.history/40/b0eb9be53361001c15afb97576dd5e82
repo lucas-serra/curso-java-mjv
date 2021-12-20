@@ -1,0 +1,21 @@
+package aula;
+
+public class SGEAplication {
+
+	public static void main(String[] args) {
+
+		//a classe inicializadora tem menos implementacao
+		Disciplinas materia = new Disciplinas();
+		GestaoAluno gestao= new GestaoAluno();
+		Aluno aluno=new Aluno();
+		Professor professor= new Professor();
+		System.out.println("======================================");
+		materia.inscricaoDisciplinas();
+		gestao.mediaAluno();
+		
+		System.out.println("======================================");
+		professor.toString();
+		
+	}
+
+}

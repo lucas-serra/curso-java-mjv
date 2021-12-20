@@ -1,0 +1,24 @@
+package aula;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Disciplinas {
+	Aluno aluno= new Aluno();
+	List<String> disciplinas= new ArrayList<String>();
+	
+	public void inscricaoDisciplinas() {
+		disciplinas.add("Português");
+		disciplinas.add("Matemática");
+		disciplinas.add("História");
+		disciplinas.add("Ciencias");
+		
+		System.out.println("O aluno "+aluno.getNome()+"\nEstá inscrito em "+disciplinas.size()+" disciplinas.");
+		for (String res : disciplinas) {
+			System.out.println(res);
+		}
+		
+	}
+	
+	
+}

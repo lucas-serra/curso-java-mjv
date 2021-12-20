@@ -1,0 +1,28 @@
+package aula;
+
+public class Aluno extends Pessoa{
+	private int matricula;
+	private String turma;
+	private String turno;
+	
+	public int getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+	public String getTurma() {
+		return turma;
+	}
+	public void setTurma(String turma) {
+		this.turma = turma;
+	}
+	public String getTurno() {
+		return turno;
+	}
+	public void setTurno(String turno) {
+		this.turno = turno;
+	}
+	
+	
+}

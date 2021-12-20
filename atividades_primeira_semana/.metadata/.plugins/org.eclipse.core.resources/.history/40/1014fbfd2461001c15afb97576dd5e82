@@ -1,0 +1,32 @@
+package aula4;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class InformacoesPessoais {
+	public static void main(String[] args) {
+		Pessoa lucas= new Pessoa();
+		
+		lucas.setDataNascimento("11/11/2000");
+		lucas.setAltura(1.75);
+		lucas.setNome("Lucas Dias Serra");
+		lucas.setTelefone(999956924);
+		lucas.setDoadorOrgao(false);
+		lucas.setEmail("lucasdserra1234@gmail.com");
+		lucas.setIdade(21);
+		
+		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+		Date data = new Date();
+		
+		try {
+			data= formato.parse(lucas.getDataNascimento());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		lucas.toString();
+		System.out.println(data);
+	}
+	
+}

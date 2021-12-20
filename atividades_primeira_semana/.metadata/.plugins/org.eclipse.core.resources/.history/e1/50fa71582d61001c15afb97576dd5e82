@@ -1,0 +1,35 @@
+package aula;
+
+public class Professor extends Pessoa{
+	private String matriculaEmprego;
+	private int cargaHoraria;
+	private double salario;
+	private String disciplina;
+	
+	public String getMatriculaEmprego() {
+		return matriculaEmprego;
+	}
+	public void setMatriculaEmprego(String matriculaEmprego) {
+		this.matriculaEmprego = matriculaEmprego;
+	}
+	public int getCargaHoraria() {
+		return cargaHoraria;
+	}
+	public void setCargaHoraria(int cargaHoraria) {
+		this.cargaHoraria = cargaHoraria;
+	}
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	public String getDisciplina() {
+		return disciplina;
+	}
+	public void setDisciplina(String disciplina) {
+		this.disciplina = disciplina;
+	}
+	
+	
+}

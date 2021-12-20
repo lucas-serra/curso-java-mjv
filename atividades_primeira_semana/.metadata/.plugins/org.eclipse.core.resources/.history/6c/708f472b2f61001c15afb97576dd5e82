@@ -1,0 +1,18 @@
+package aula;
+
+public class GestaoAluno {
+
+	Aluno aluno = new Aluno();
+	
+	public void realizarMatricula() {
+		
+	}
+	public void inscricaoDisciplinas() {
+		
+	}
+	public void notas() {
+		
+	}
+	
+	
+}
