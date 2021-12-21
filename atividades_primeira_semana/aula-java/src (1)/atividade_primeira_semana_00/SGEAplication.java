@@ -1,28 +1,23 @@
-package aula;
+package atividade_primeira_semana_00;
 
 public class SGEAplication {
 
 	public static void main(String[] args) {
 
 		//a classe inicializadora tem menos implementacao
+		Aluno osmar = new Aluno("Osmar José","132.123.654-98",14,"89785634","3001B","manhã");
 		Disciplinas materia = new Disciplinas();
 		GestaoAluno gestao= new GestaoAluno();
-		Aluno aluno=new Aluno();
-		Professor professor= new Professor();
+		Professor professor= new Professor("Marcos Mario Monteiro","123.432.111-88",45,"22334455",36,2500.12,"Matemática");
 		
-		
-		aluno.setNome("Osmar José ");
-		aluno.setCpf("234.123.789-70");
-		aluno.setTurno("manhã");
-		aluno.setTurma("702 A");
-		aluno.setMatricula("09876543");
-		aluno.setIdade(13);
+		System.out.println(osmar.toString());
 		System.out.println("======================================");
-		aluno.toString();
-		materia.inscricaoDisciplinas();
+		
+		
+		materia.inscricaoDisciplinas(osmar);
 		gestao.setAv1(9.2);
 		gestao.setAv2(8.7);
-		gestao.mediaAluno();
+		gestao.mediaAluno(osmar);
 		
 		System.out.println("======================================");
 		professor.setNome("Marcos Mario Monteiro");
@@ -32,10 +27,11 @@ public class SGEAplication {
 		professor.setMatriculaEmprego("98765432");
 		professor.setDisciplinaMinistrada("geografia");
 		professor.setCargaHoraria(36);
-		professor.toString();
+		System.out.println(professor.toString());
 		
 		System.out.println("======================================");
 		
 	}
 
 }
+

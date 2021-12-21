@@ -1,4 +1,4 @@
-package aula;
+package atividade_primeira_semana_00;
 
 public class Professor extends Pessoa{
 	private String matriculaEmprego="00789654";
@@ -32,6 +32,12 @@ public class Professor extends Pessoa{
 		this.disciplinaMinistrada = disciplinaMinistrada;
 	}
 	@Override
+	public String toString() {
+		return "Professor [matriculaEmprego=" + matriculaEmprego + ", cargaHoraria=" + cargaHoraria + ", salario="
+				+ salario + ", disciplinaMinistrada=" + disciplinaMinistrada + ", Nome=" + getNome()
+				+ ", Cpf=" + getCpf() + ", Idade=" + getIdade();
+	}
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
@@ -54,11 +60,16 @@ public class Professor extends Pessoa{
 			return false;
 		return true;
 	}
-	@Override
-	public String toString() {
-		return "Professor [matriculaEmprego=" + matriculaEmprego + ", cargaHoraria=" + cargaHoraria + ", salario="
-				+ salario + ", disciplinaMinistrada=" + disciplinaMinistrada + "]";
+	public Professor(String nome, String cpf, int idade, String matriculaEmprego, int cargaHoraria, double salario,
+			String disciplinaMinistrada) {
+		super(nome, cpf, idade);
+		this.matriculaEmprego = matriculaEmprego;
+		this.cargaHoraria = cargaHoraria;
+		this.salario = salario;
+		this.disciplinaMinistrada = disciplinaMinistrada;
 	}
+	
+	
 	
 	
 	

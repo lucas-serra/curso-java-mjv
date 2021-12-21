@@ -1,4 +1,4 @@
-package aula4;
+package atividade_primeira_semana_01;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -16,9 +16,7 @@ public class InformacoesPessoais {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		//nao funcionou
-		lucas.toString();
-		//solucao alternativa
+
 		System.out.println("Nome:"+lucas.getNome());
 		System.out.println("Altura:"+lucas.getAltura());
 		System.out.println("Cpf:"+lucas.getCpf());
