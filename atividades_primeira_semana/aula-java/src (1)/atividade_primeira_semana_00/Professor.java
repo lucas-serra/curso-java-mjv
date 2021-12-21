@@ -5,6 +5,7 @@ public class Professor extends Pessoa{
 	private int cargaHoraria=36;
 	private double salario=2600.00;
 	private String disciplinaMinistrada="matematica";
+	private String turma;
 	
 	public String getMatriculaEmprego() {
 		return matriculaEmprego;
@@ -31,11 +32,11 @@ public class Professor extends Pessoa{
 	public void setDisciplinaMinistrada(String disciplinaMinistrada) {
 		this.disciplinaMinistrada = disciplinaMinistrada;
 	}
-	@Override
-	public String toString() {
-		return "Professor [matriculaEmprego=" + matriculaEmprego + ", cargaHoraria=" + cargaHoraria + ", salario="
-				+ salario + ", disciplinaMinistrada=" + disciplinaMinistrada + ", Nome=" + getNome()
-				+ ", Cpf=" + getCpf() + ", Idade=" + getIdade();
+	public String getTurma() {
+		return turma;
+	}
+	public void setTurma(String turma) {
+		this.turma = turma;
 	}
 	@Override
 	public int hashCode() {
@@ -61,13 +62,15 @@ public class Professor extends Pessoa{
 		return true;
 	}
 	public Professor(String nome, String cpf, int idade, String matriculaEmprego, int cargaHoraria, double salario,
-			String disciplinaMinistrada) {
+			String disciplinaMinistrada, String turma) {
 		super(nome, cpf, idade);
 		this.matriculaEmprego = matriculaEmprego;
 		this.cargaHoraria = cargaHoraria;
 		this.salario = salario;
 		this.disciplinaMinistrada = disciplinaMinistrada;
+		this.turma= turma;
 	}
+	
 	
 	
 	

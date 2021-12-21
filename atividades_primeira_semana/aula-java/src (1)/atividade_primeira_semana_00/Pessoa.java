@@ -46,11 +46,7 @@ public class Pessoa {
 			return false;
 		return true;
 	}
-	@Override
-	public String toString() {
-		return "Pessoa [nome=" + nome + ", cpf=" + cpf + ", idade=" + idade + ", getNome()=" + getNome() + ", getCpf()="
-				+ getCpf() + ", getIdade()=" + getIdade();
-	}
+	
 	public Pessoa(String nome, String cpf, int idade) {
 		super();
 		this.nome = nome;
