@@ -12,12 +12,19 @@ import java.util.List;
 public class Conta {
 //2 a 3 atributos
 	private double saldo;
+	private String nomeCorrentista;
 	private int numero;
 	private double chequeEspecial;
 	private String tipo;
 	private List <Historico> historico = new ArrayList<>();
 	
 	
+	public String getNomeCorrentista() {
+		return nomeCorrentista;
+	}
+	public void setNomeCorrentista(String nomeCorrentista) {
+		this.nomeCorrentista = nomeCorrentista;
+	}
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
@@ -49,6 +56,10 @@ public class Conta {
 	}
 	public void setHistorico(List<Historico> historico) {
 		this.historico = historico;
+	}
+	@Override
+	public String toString() {
+		return "Conta [nomeCorrentista=" + nomeCorrentista + ", numero=" + numero + "]";
 	}
 
 	

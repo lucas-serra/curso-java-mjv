@@ -1,13 +1,29 @@
 package banckapp;
 
 import banckapp.model.Conta;
+import banckapp.repository.ContaRepository;
 import banckapp.service.ContaService;
 
 public class BanckApplication {
 
 	public static void main(String[] args) {
-//2 a 3 contas de integrantes
+		//2 a 3 contas de integrantes
+		Conta lucas = new Conta();
+		ContaRepository contaR= new ContaRepository();
+		lucas.setNomeCorrentista("Lucas");
+		lucas.setNumero(9999);
+		
+		
+		Conta matheus = new Conta();
+		matheus.setNomeCorrentista("Matheus");
+		matheus.setNumero(8888);
+		contaR.adicionarConta(lucas);
+		contaR.adicionarConta(matheus);
 
+		contaR.imprimirContas();
+	}
+
+	private static void exemplo1() {
 		Conta conta1 = new Conta();
 		Conta conta2 = new Conta();
 		ContaService terminal = new ContaService();
@@ -20,7 +36,6 @@ public class BanckApplication {
 		System.out.println(conta2.getSaldo());
 		System.out.println(conta2.getChequeEspecial());
 		
-
 	}
-
+	
 }
