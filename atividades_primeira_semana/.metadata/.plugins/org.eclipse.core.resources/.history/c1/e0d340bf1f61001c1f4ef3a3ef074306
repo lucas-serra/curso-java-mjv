@@ -1,0 +1,16 @@
+package aula4;
+
+import java.time.format.DateTimeFormatter;
+
+public class InformacoesPessoais {
+
+	int idade;
+	String nome;
+	String cpf;
+	boolean doadorOrgao;
+	String email;
+	double altura;
+	int telefone;
+	DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy"); 
+	
+}

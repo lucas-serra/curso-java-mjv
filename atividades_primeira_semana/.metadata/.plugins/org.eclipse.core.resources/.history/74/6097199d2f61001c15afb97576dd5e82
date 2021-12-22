@@ -1,0 +1,10 @@
+package aula;
+
+public class SGEAplication {
+
+	public static void main(String[] args) {
+
+		//a classe inicializadora tem menos implementacao
+	}
+
+}

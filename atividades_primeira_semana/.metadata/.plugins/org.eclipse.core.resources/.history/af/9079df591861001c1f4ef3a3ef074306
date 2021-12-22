@@ -1,0 +1,26 @@
+package aula4;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class Pessoa {
+	int idade=21;
+	String nome="Emanoel Estevam";
+	String cpf="14618506780";
+	boolean doadorOrgao= false;
+	String email= "emanoel@gmail.com";
+	double altura= 1.75;
+	int telefone=99993243;
+	DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy"); 
+	LocalDate dataNascimento = LocalDate.parse("11/11/2000", formato);
+	
+	@Override
+	public String toString() {
+		return "Pessoa [idade=" + idade + ", nome=" + nome + ", cpf=" + cpf + ", doadorOrgao=" + doadorOrgao
+				+ ", email=" + email + ", altura=" + altura + ", telefone=" + telefone + ", formato=" + formato
+				+ ", dataNascimento=" + dataNascimento + "]";
+	} 
+	
+	
+	
+}
